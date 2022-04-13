@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class FuncionarioComissionado extends Funcionario {
 	
 	private int vendas;
-	private double salarioComissionado;
 	private double comissao;
 	
 	FuncionarioComissionado(String primeiro_nome, String segundo_nome, double salario, int vendas){
@@ -23,14 +22,7 @@ public class FuncionarioComissionado extends Funcionario {
 		System.out.println("Salario Comissionado: "+comissao);
 		
 	}
-	public double getSalarioComissionado(double salarioComissionado) {
 		
-		this.salarioComissionado = comissao;
-		
-		return this.salarioComissionado;		
-		
-	}
-	
 	public double getVendas() {
 		return vendas;
 	}
