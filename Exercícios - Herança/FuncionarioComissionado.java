@@ -31,12 +31,5 @@ public class FuncionarioComissionado extends Funcionario {
 		this.vendas = vendas;
 	}
 	
-	public void verFunc() {
-		
-		Scanner in = new Scanner(System.in);
-		
-		System.out.println("Insira o primeiro nome do funcionario: ");
-		
-	}
-
+	
 }
