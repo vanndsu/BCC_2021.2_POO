@@ -57,6 +57,9 @@ public class Main {
 		        	f1.comissao();//salario comissionado		        	
 		        	
 		        	break;
+				
+			default:
+				break;
 		        
 		      }
        }
