@@ -60,6 +60,8 @@ public abstract class Funcionario {
         this.salario = salario;
     }
     
+    public abstract String toString();
+    
     public abstract double ganhos();
     
 }
