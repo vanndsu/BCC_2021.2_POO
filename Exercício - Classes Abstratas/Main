@@ -37,7 +37,7 @@ public class Main {
 		        		
 		       
 		        		
-		        	System.out.println("\nNome do funcinario: "+f1.getPrimeiro_nome()+" "+f1.getSegundo_nome());		        		
+		        	System.out.println("\nNome do funcinario: "+f1.toString());		        		
 		        			        			        	
 		        	System.out.println("\nSalario do funcionario: "+f1.ganhos());		        	
 		        	
@@ -58,7 +58,7 @@ public class Main {
 		        		f2.setSalarioSemanal(in.nextDouble());	
 		        		
 		        	
-		        	System.out.println("\nNome do funcinario: "+f2.getPrimeiro_nome()+" "+ f2.getSegundo_nome());
+		        	System.out.println("\nNome do funcinario: "+f2.toString());
 		        	
 		        	System.out.println("\nSalario do funcionario: "+f2.ganhos());
 		        	
@@ -81,7 +81,7 @@ public class Main {
 		        		f3.setHoras(in.nextInt());	       	
 		        		
 		        	
-		        	System.out.println("\nNome do funcinario: "+f3.getPrimeiro_nome()+" "+ f3.getSegundo_nome());
+		        	System.out.println("\nNome do funcinario: "+f3.toString());
 		        	
 		        	System.out.println("\nSalario do funcionario: "+f3.ganhos());
 		        	
@@ -94,8 +94,8 @@ public class Main {
 		        	
 		        	break;
 		        
-		      }
-		    }
-      }
-	  }
+		   }
+	       }
+           }
+	}
 
