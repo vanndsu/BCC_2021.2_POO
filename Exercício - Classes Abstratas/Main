@@ -1,0 +1,101 @@
+import java.util.Scanner;
+
+public class Main {
+		    public static void main(String[] args) throws Exception {
+		        
+		    	Scanner in = new Scanner(System.in);
+		    	
+		    	//Funcionario f2 = new Funcionario();
+		        FuncionarioComissionado f1 = new FuncionarioComissionado();
+		        FuncionarioAssalariado f2 = new FuncionarioAssalariado();
+		        FuncionarioHora f3 = new FuncionarioHora();
+		        
+		        System.out.println("Escolha um funcionario para as informações.");
+		        	System.out.println("1- Funcionario Comissionado\n2- Funcionario Assalariado\n3- Funcionario Hora");
+		        
+		       while (true) {
+		    	   
+		        int op = in.nextInt();	
+		        switch(op) {
+		        	
+		        
+		        case 1:
+		        	
+		        	in.nextLine();
+		        	
+		        	System.out.print("\nDigite o primeiro nome do funcionario: ");
+		        		f1.setPrimeiro_nome(in.nextLine());
+		        	
+		        	System.out.print("\nDigite o segundo nome do funcionario: ");
+		        		f1.setSegundo_nome(in.nextLine());
+		        	
+		        	System.out.print("\nDigite o salario do funcionario: ");
+		        		f1.setSalario(in.nextDouble());//Define um salario padrão de um funcionario	
+		        		
+		        	System.out.print("\nDigite a quantidade de vendas do funcionario: ");
+		        		f1.setVendas(in.nextInt()); //quantidade de vendas feita pelo funcionario
+		        		
+		       
+		        		
+		        	System.out.println("\nNome do funcinario: "+f1.getPrimeiro_nome()+" "+f1.getSegundo_nome());		        		
+		        			        			        	
+		        	System.out.println("\nSalario do funcionario: "+f1.ganhos());		        	
+		        	
+		        	break;
+		        	
+		        case 2:
+		        	
+		        	in.nextLine();
+		        	
+		        	System.out.print("\nDigite o primeiro nome do funcionario: ");
+		        		f2.setPrimeiro_nome(in.nextLine());
+		        			
+		        			
+		        	System.out.print("\nDigite o segundo nome do funcionario: ");
+		        		f2.setSegundo_nome(in.nextLine());
+		        	
+		        	System.out.print("\nDigite o salario semanal do funcionario: ");
+		        		f2.setSalarioSemanal(in.nextDouble());	
+		        		
+		        	
+		        	System.out.println("\nNome do funcinario: "+f2.getPrimeiro_nome()+" "+ f2.getSegundo_nome());
+		        	
+		        	System.out.println("\nSalario do funcionario: "+f2.ganhos());
+		        	
+		        	break;
+		        	
+		        case 3:
+		        	
+		        	in.nextLine();
+		        	
+		        	System.out.print("\nDigite o primeiro nome do funcionario: ");
+		        		f3.setPrimeiro_nome(in.nextLine());
+		        					        			
+		        	System.out.print("\nDigite o segundo nome do funcionario: ");
+		        		f3.setSegundo_nome(in.nextLine());
+		        	
+		        	System.out.print("\nDigite a quantidade ganha por hora do funcionario: ");
+		        		f3.setValorDaHora(in.nextDouble());
+		        		
+		        	System.out.print("\nDigite a quantidade de horas trabalhadas do funcionario: ");
+		        		f3.setHoras(in.nextInt());	       	
+		        		
+		        	
+		        	System.out.println("\nNome do funcinario: "+f3.getPrimeiro_nome()+" "+ f3.getSegundo_nome());
+		        	
+		        	System.out.println("\nSalario do funcionario: "+f3.ganhos());
+		        	
+		        	break;
+		        	
+		        	
+		        default:
+		        	
+		        	System.out.println("Escolha um opção válida");
+		        	
+		        	break;
+		        
+		      }
+		    }
+      }
+	  }
+
