@@ -39,7 +39,7 @@ public class FuncionarioHora extends Funcionario{
 	
 	public String toString() {
 		
-		String funcionario = "Nome: "+getPrimeiro_nome()+" "+getSegundo_nome()+"Matrícula: "+getMatricula();
+		String funcionario = "Nome: "+getPrimeiro_nome()+" "+getSegundo_nome()+" MatrÃ­cula: "+getMatricula();
 		
 		return funcionario;
 	}
