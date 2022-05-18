@@ -1,0 +1,89 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+	
+    public static void main(String args[]){
+    	
+        ArrayList<Prod> produtos = new ArrayList<Prod>();
+        	Scanner in = new Scanner(System.in);
+        
+        int n=0;
+        	double price, customs;
+        		String opc = "", name, date;
+        			boolean op = true;
+        			
+        System.out.println("Digite '0' para sair.");
+        
+        while(op){
+            
+            System.out.println("Para produtos comum (c)| Para produtos usados (u) | Para produtos importados(i)");
+            System.out.println("Qual deseja selecionar?");
+            
+            opc = in.next();
+            switch(opc){
+                case "c":
+                    System.out.printf("Prod %d data:\n", n+1);
+                    	System.out.print("Name: ");
+                    		name = in.next();
+                    		
+                    System.out.print("Price: ");
+                    	price = in.nextDouble();
+                    	
+                    produtos.add(new Prod(name, price));
+                    	n++;
+                    		break;
+
+                case "u":
+                	
+                    System.out.printf("Prod %d data:\n", n);
+                    	System.out.print("Nome: ");
+                    		name = in.next();
+                    System.out.print("Preço: ");                    
+                    	price = in.nextDouble();
+                    	
+                    System.out.print("Data de Fabricação: ");
+                    	date = in.next();
+                    	
+                    produtos.add(new Prod_Usa(name, price, date));
+                    
+                    	n++;
+                    
+                    	break;
+
+                case "i":
+                	
+                    System.out.printf("Prod %d data:\n", n);
+                    	System.out.print("Nome: ");                    	
+                    		name = in.next();
+                    		
+                    System.out.print("Preço: ");
+                    	price = in.nextDouble();
+                    	
+                    System.out.print("Taxa alfandegária: ");
+                    	customs = in.nextDouble();
+                    	
+                    produtos.add(new Prod_Imp(name, price, customs));
+                    	n++;
+                    		break;
+
+                case "0":
+                	
+                    System.out.println("Tags de Preço:");
+                    
+                    for(int i = 0; i < n; i++){
+                    	
+                        System.out.println(produtos.get(i).priceTag());
+                    }
+                    
+                    op = false;
+                    	break;
+
+                default:
+                	
+                    System.out.println("Opcao invalida!");
+                    	break;
+            }
+        }
+    }
+}
