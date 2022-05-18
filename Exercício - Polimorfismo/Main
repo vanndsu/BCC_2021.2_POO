@@ -27,7 +27,7 @@ public class Main {
                     	System.out.print("Name: ");
                     		name = in.next();
                     		
-                    System.out.print("Price: ");
+                    System.out.print("Preço: ");
                     	price = in.nextDouble();
                     	
                     produtos.add(new Prod(name, price));
