@@ -24,7 +24,7 @@ public class Main {
             switch(opc){
                 case "c":
                     System.out.printf("Prod %d data:\n", n+1);
-                    	System.out.print("Name: ");
+                    	System.out.print("Nome: ");
                     		name = in.next();
                     		
                     System.out.print("Preço: ");
